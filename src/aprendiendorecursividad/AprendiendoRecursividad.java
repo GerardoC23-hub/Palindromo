@@ -15,17 +15,17 @@ public class AprendiendoRecursividad {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        recursividad x = new recursividad();
-        
-        boolean res = x.wrapperPalindromo("ANNA");
-        if(res)
-        {
-            System.out.println("Es una palabra palindromo");
-        }
-        else
-        {
-           System.out.println("No es una palabra palindromo"); 
-        }
+        // Palabras palíndromas
+        System.out.println("reconocer " + (x.wrapperPalindromo("reconocer") ? "SÍ es una palabra palíndroma" : "NO es una palabra palíndroma"));
+        System.out.println("radar " + (x.wrapperPalindromo("radar") ? "SÍ es una palabra palíndroma" : "NO es una palabra palíndroma"));
+ 
+        // Palabras que no son palíndromas
+        System.out.println("computadora " + (x.wrapperPalindromo("computadora") ? "SÍ es una palabra palíndroma" : "NO es una palabra palíndroma"));
+        System.out.println("casa " + (x.wrapperPalindromo("casa") ? "SÍ es una palabra palíndroma" : "NO es una palabra palíndroma"));
+ 
+        // Casos borde: cadena vacía y un solo carácter
+        System.out.println("cadena vacía " + (x.wrapperPalindromo("") ? "SÍ es una palabra palíndroma" : "NO es una palabra palíndroma"));
+        System.out.println("(a) un carácter)" + (x.wrapperPalindromo("a") ? "SÍ es una palabra palíndroma" : "NO es una palabra palíndroma"));
     }
     
 }
